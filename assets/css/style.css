@@ -1,1 +1,232 @@
+* {
+    margin: 0;
+}
 
+/* colors */
+:root {
+    --primary: rgb(78, 78, 78);
+    --secondary: rgb(131, 240, 198);
+    --third: rgb(4, 122, 117);
+    --white: rgb(255, 255, 255);
+    --black: rgb(0, 0, 0);    
+}
+
+/* whole page code */
+body {
+    background-color: var(--primary);
+    color: var(--secondary);
+    margin: 0;
+    padding: 0;
+}
+
+/* header code */
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    padding: 0 0 0 30px;
+    font-size: 60px;
+}
+
+header nav {
+    padding: 0 30px;
+}
+
+header nav a {
+    padding: 0 40px;
+    color: var(--secondary);
+    font-size: 30px;
+}
+
+/* subtitle or hero styling */
+.subtitle {
+    display: flex;
+    justify-content: space-between;
+    border: 5px var(--third);
+    align-items: flex-end;
+    background-image: url("../images/mountain.jpg");
+    background-position: 70% 30%;
+    background-size: 100%;
+    background-repeat: none;
+}
+
+.subtitle img {
+    width: 15%; 
+}
+
+.subtitle div h2 {
+    font-size: 40px;
+    padding: 0 40px;
+}
+
+/* about me section */
+.me {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 2px solid var(--third);
+}
+
+.me h2 {
+    font-size: 40px;
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+.me p {
+    display: block;
+    font-size: 20px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/* my work section */
+.work h2 {
+    font-size: 40px;
+    padding: 50px 0 0 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-item {
+    border: 2px solid var(--third);
+    height: 200px;
+    flex-basis: 30%;
+    margin: 50px;
+}
+
+.run-buddy {
+    background-image: url("../images/hero-bg.jpg");
+    min-height: 500px;
+    flex-basis: 80%;
+    background-position: right bottom;
+}
+
+.run-buddy div {
+    font-size: 30px;
+    padding: 15px;
+    font-weight: bold;
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.soccer {
+    background-image: url("../images/penalty.jpg");
+    padding: 100px 0;
+    background-position: center;
+    background-blend-mode: soft-light;
+}
+
+.soccer div {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.calculator {
+    background-image: url("../images/calculator.jpg");
+    background-position: center;
+    padding: 100px 0;
+}
+
+.calculator div {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.flex-item  div {
+    background-color: var(--third);
+    padding: 0 15px;
+    width: 210px;
+}
+
+/* contact me info */
+.contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10px;
+    flex-wrap: wrap;
+}
+
+.contact h2 {
+    font-size: 50px;
+}
+
+.contact-info a {
+    padding: 40px;
+    font-size: 30px;
+    color: var(--secondary);
+}
+
+/* my resume */
+.resume {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume h2 {
+    font-size: 50px;
+}
+
+.resume a {
+    padding: 40px;
+    font-size: 30px;
+    color: var(--secondary);
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    font-size: 30px;
+}
+
+/* screen size adjustments */
+@media screen and (max-width: 980px) {
+   body {
+       margin: auto;
+   }
+   
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+    }
+
+    header nav {
+        justify-content: center;
+    }
+
+    .me > h2,
+    .me > div {
+        flex: 0 0 100%;
+    }
+
+    .me > h2 {
+        border-right: none;
+        border-bottom: 4px solid var(--primary);
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-align: left;
+        font-size: 7vw;
+      }
+}
