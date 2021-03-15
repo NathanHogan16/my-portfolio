@@ -120,14 +120,16 @@ header nav a {
     text-decoration: underline;
 }
 
-.soccer {
-    background-image: url("../images/penalty.jpg");
+.map {
+    background-image: url("../images/google\ marker.png");
     padding: 100px 0;
     background-position: center;
     background-blend-mode: soft-light;
+    background-size: 400px;
+    background-repeat: no-repeat;
 }
 
-.soccer div {
+.map div {
     font-size: 30px;
     font-weight: bold;
     color: var(--black);
@@ -138,6 +140,8 @@ header nav a {
     background-image: url("../images/calculator.jpg");
     background-position: center;
     padding: 100px 0;
+    background-size: 400px;
+    background-repeat: no-repeat;
 }
 
 .calculator div {
